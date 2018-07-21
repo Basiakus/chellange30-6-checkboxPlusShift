@@ -3,10 +3,7 @@ const checkboxes = document.querySelectorAll('#inbox .item input[type="checkbox"
 let lastChecked;
 
 function handleCheckbox(e) {
-	console.log(this);
-	console.log(`this input checked = ${this.checked}`);
-	console.log(`this input shiftKey = ${e.shiftKey}`)
-
+	//console.log(this);
 	let inBeetwen = false;
 	if (e.shiftKey && this.checked) {
 		checkboxes.forEach( checkbox => {
